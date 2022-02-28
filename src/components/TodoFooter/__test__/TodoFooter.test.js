@@ -10,7 +10,7 @@ const MockTodoFooter = ({numberOfIncompleteTasks}) => {
   )
 }
 
-describe("Header" , () => {  
+describe("TodoFooter" , () => {  
   it('should render the correct amount of incomplete task',() => {
     render(<MockTodoFooter numberOfIncompleteTasks={5}/>);
     const Element = screen.getByText(/5 tasks left/i);
